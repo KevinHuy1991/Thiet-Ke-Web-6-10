@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+#text {
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+button#jsstyle {
+    padding: 10px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+button#jsstyle:hover {
+    background-color: #0056b3;
+}
+
+button#jsstyle:active {
+    transform: scale(0.98);
+}

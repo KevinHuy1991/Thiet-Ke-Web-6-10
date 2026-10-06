@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return first and last name from a form</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body>
+    <form id="form1" onsubmit="return getFormvalue(event)">
+        First name: <input type="text" name="fname" value="David"><br>
+        Last name: <input type="text" name="lname" value="Beckham"><br>
+        <input type="submit" value="Submit">
+        <div id="result"></div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Exercise</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/script.js"></script>
+</head>
+<body>
+    <div class="window-container">
+        <div class="window-header">
+            <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+            </div>
+            <span class="window-title">Form Validation Exercise</span>
+        </div>
+        
+        <div class="form-body">
+            <h2>Personal Information</h2>
+            
+            <form id="registrationForm" novalidate>
+                <div class="form-group">
+                    <label class="form-label" for="name">Enter name*:</label>
+                    <div class="form-control-wrap">
+                        <input type="text" id="name" class="form-input" />
+                        <span id="nameError" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Sex*:</label>
+                    <div class="form-control-wrap">
+                        <div class="radio-group">
+                            <label><input type="radio" name="sex" value="Male"> Male</label>
+                            <label><input type="radio" name="sex" value="Female"> Female</label>
+                        </div>
+                        <span id="sexError" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="email">Enter email address*:</label>
+                    <div class="form-control-wrap">
+                        <input type="text" id="email" class="form-input" />
+                        <span id="emailError" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="birthday">Enter birthday (MM/DD/YYYY)*:</label>
+                    <div class="form-control-wrap">
+                        <input type="text" id="birthday" class="form-input" placeholder="mm/dd/yyyy" />
+                        <span id="birthdayError" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="street">Enter street address (line 1)*:</label>
+                    <div class="form-control-wrap">
+                        <input type="text" id="street" class="form-input" />
+                        <span id="streetError" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="city">Enter city*:</label>
+                    <div class="form-control-wrap">
+                        <input type="text" id="city" class="form-input" />
+                        <span id="cityError" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="region">Select a region*:</label>
+                    <div class="form-control-wrap">
+                        <select id="region" class="form-select">
+                            <option value="">-- Select a region --</option>
+                            <option value="North">Miền Bắc</option>
+                            <option value="Central">Miền Trung</option>
+                            <option value="South">Miền Nam</option>
+                            <option value="Other">Khác</option>
+                        </select>
+                        <span id="regionError" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="zip">Enter 5-digit ZIP code*:</label>
+                    <div class="form-control-wrap">
+                        <input type="text" id="zip" class="form-input" maxlength="5" />
+                        <span id="zipError" class="error-text"></span>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="btnFinish" class="btn btn-primary">Finished</button>
+                    <button type="button" id="btnClear" class="btn btn-secondary">Clear</button>
+                </div>
+
+                <div id="successAlert" class="alert-success-msg"></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
