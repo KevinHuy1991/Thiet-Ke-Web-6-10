@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f9f9f9;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+#text {
+    font-size: 16px;
+    font-family: 'Times New Roman', serif;
+    color: #333333;
+    padding: 10px;
+    border-left: 4px solid #3498db;
+    background-color: #f0f7fb;
+    transition: all 0.3s ease;
+}
+
+#jsstyle {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+#jsstyle:hover {
+    background-color: #2980b9;
+}

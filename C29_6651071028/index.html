@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return first and last name from a form</title>
+    <link rel="stylesheet" href="Styles/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h2>Câu 29: Lấy giá trị Họ và tên từ form bằng DOM</h2>
+        <form id="form1" onsubmit="return getFormvalue()">
+            <div class="form-group">
+                <label>First name:</label>
+                <input type="text" name="fname" value="David">
+            </div>
+            <div class="form-group">
+                <label>Last name:</label>
+                <input type="text" name="lname" value="Beckham">
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
